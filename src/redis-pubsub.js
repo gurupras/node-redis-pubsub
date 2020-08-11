@@ -23,9 +23,10 @@ class RedisPubSub {
     })
 
     this.sub.psubscribe(`${prefix}*`)
-    this.sub.on('pmessage', (pattern, channel, message) => {
+    this.sub.on('pmessage', async (pattern, channel, message) => {
       const json = JSON.parse(message)
       const { event, data, requestID } = json
+      await this.emit('pmessage', { event, data, requestID })
       return this.emit(event, { data, requestID })
     })
   }

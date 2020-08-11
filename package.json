@@ -1,6 +1,6 @@
 {
   "name": "@gurupras/redis-pubsub",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Simple redis pubsub client with ability to publish and wait for response",
   "main": "index.js",
   "scripts": {

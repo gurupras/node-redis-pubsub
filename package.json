@@ -38,6 +38,6 @@
     "@gurupras/deferred": "^0.1.1",
     "emittery": "^0.7.2",
     "nanoid": "^3.1.16",
-    "redis": "^3.0.2"
+    "redis": "^3.1.1"
   }
 }
